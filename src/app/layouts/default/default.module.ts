@@ -5,6 +5,7 @@ import { DefaultComponent } from './default.component';
 import { DashboardComponent } from '../../modules/dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -21,7 +22,8 @@ import { SharedModule } from '../../shared/shared.module';
     CommonModule,
     RouterModule,
     SharedModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule,
     
   ]
 })

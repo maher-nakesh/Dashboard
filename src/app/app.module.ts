@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DefaultModule } from './layouts/default/default.module';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 
 
@@ -17,7 +21,10 @@ import { DefaultModule } from './layouts/default/default.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DefaultModule
+    DefaultModule,
+    HttpClientModule,
+
+    
     
   ],
   providers: [
@@ -25,5 +32,6 @@ import { DefaultModule } from './layouts/default/default.module';
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
